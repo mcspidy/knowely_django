@@ -155,8 +155,17 @@ Faster way to get to the project (Ubuntu)
 
     python -m pip install flake8
     python -m pip install black
+    python -m pip install django
+    python -m pip install django-extensions
 
-    * Both are in the requirements.txt file
+    * All are in the requirements.txt file
+
+### Django Commands (when using venv)
+
+    python manage.py runserver      # ctrl-c to exit
+    python manage.py loaddata <datafile.json>
+    python manage.py makemigrations
+    python manage.py migrate
 
 ### One Line Command for testing setup
 
