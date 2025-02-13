@@ -18,3 +18,4 @@ class LoyaltyProgramParticipant(models.Model):
     last_activity = models.DateField()
     active_bonuses = models.IntegerField(default=0, null=True, blank=True)
     sum_of_spent_money = models.IntegerField(default=0)
+

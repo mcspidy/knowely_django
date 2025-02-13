@@ -33,6 +33,7 @@ Also installed on the Ubuntu VM...
     > sudo apt install ubuntu-gnome-desktop
 - [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 - [Mongoose Compass](https://www.mongodb.com/try/download/compass)
+- [DBeaver Community](https://dbeaver.io/download/)
 - [OneDrive](https://ubuntuhandbook.org/index.php/2024/02/install-onedrive-ubuntu/)
     > sudo apt install onedrive
 - [Postman](https://bytexd.com/how-to-install-postman-on-ubuntu/)
@@ -45,6 +46,7 @@ Windows 11 with an SSH connection to Ubuntu 24.04 vm
 VS Code
 pyenv
 Python 3.10.16
+[Run Django on Visual Studio Code](https://medium.com/@abdullahsohailcs/how-to-run-django-on-visual-studio-code-using-the-integrated-terminal-using-the-integrated-e73bbe80cd91)
 
 Basic Steps for [How to install Pyenv in Ubuntu 22.04](https://itslinuxfoss.com/install-use-pyenv-ubuntu/)
 
@@ -121,6 +123,29 @@ Faster way to get to the project (Ubuntu)
 
     * If space is a concern; delete the <virtual environment> location
 
+    Other virtual environment
+
+    pipenv shell
+
+### Module not Found
+
+    Issue
+
+    - Python can't find my module
+    - Python can't find module in the same folder
+
+    Solution 
+
+    - Replacing the current PYTHONPATH with the local library
+
+        export PYTHONPATH=$(pwd)
+    
+        or 
+
+    - Adding the local library to the current PYTHONPATH
+    
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
+
 ### Install packages
 
     python -m pip install --upgrade pip
@@ -130,8 +155,17 @@ Faster way to get to the project (Ubuntu)
 
     python -m pip install flake8
     python -m pip install black
+    python -m pip install django
+    python -m pip install django-extensions
 
-    * Both are in the requirements.txt file
+    * All are in the requirements.txt file
+
+### Django Commands (when using venv)
+
+    python manage.py runserver      # ctrl-c to exit
+    python manage.py loaddata <datafile.json>
+    python manage.py makemigrations
+    python manage.py migrate
 
 ### One Line Command for testing setup
 

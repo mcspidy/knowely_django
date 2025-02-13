@@ -1,17 +1,21 @@
-"""
-Your task is to write a get_most_active_customers function that returns first
-and last names along with the sum of money spent by 5 most active customers
-(people who spent the highest amount of money) as a QuerySet of tuples. The
-result should be ordered by the sum_of_spent_money field.
-"""
-
-# import init_django_orm
+import init_django_orm
 from django.db.models import QuerySet, Sum
 from db.models import LoyaltyProgramParticipant
 
 
-def get_most_active_customers() -> QuerySet[tuple]:
+def get_most_active_customers() -> QuerySet:
+    """
+    Returns the first and last names along with the sum of money spent by 5
+    most active customers as a QuerySet of tuples. The result is ordered by
+    the sum_of_spent_money field.
+    """
+
     return LoyaltyProgramParticipant.objects.values(
-        "first_name", "last_name").annotate(
-        sum_of_spent_money=Sum("spent_money")
-    ).order_by("-sum_of_spent_money")[:5]
+        "customer__first_name", "customer__last_name"
+    ).annotate(
+        sum_of_spent_money=Sum("sum_of_spent_money")
+    ).order_by(
+        "-sum_of_spent_money"
+    ).values_list(
+        "customer__first_name", "customer__last_name", "sum_of_spent_money"
+    )[:5]
