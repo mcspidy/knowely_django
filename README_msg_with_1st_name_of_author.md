@@ -2,21 +2,20 @@
 
 Consider the following models:
 
-User model with the following fields:
+1. User model with the following fields:
 
-username - user's username
-
+- username - user's username
 - first_name - user's first name
 - last_name - user's last name
 - bio - details such as age, country, or city
 
-Chat model:
+2. Chat model:
 
 - title - chat title
 - description - a short description of the chat
 - users - many-to-many field, chat participants
 
-Message model:
+3. Message model:
 
 - text - message content
 - sent - time when the message was sent
