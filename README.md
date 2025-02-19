@@ -160,12 +160,42 @@ Faster way to get to the project (Ubuntu)
 
     * All are in the requirements.txt file
 
-### Django Commands (when using venv)
+### Django 
 
+#### Commands (when using venv)
+
+    Needed for new Django App
+        - Create venv
+        - python -m pip install django
+        - django-admin startproject web_project .
     python manage.py runserver      # ctrl-c to exit
     python manage.py loaddata <datafile.json>
     python manage.py makemigrations
-    python manage.py migrate
+    
+    Creates empty development database
+        - python manage.py migrate
+
+#### Django Links
+
+>
+>[Django Tutorial in VS Code](https://code.visualstudio.com/docs/python/tutorial-django)
+>
+>[Django Fixtures Tutorial: How to use dumpdata and loaddata](https://learndjango.com/tutorials/django-fixtures-dumpdata-loaddata)
+>
+[John Sully videos](https://www.youtube.com/@johnsolly/videos)
+>
+>>[Ultimate One-click Django Debugging. Runserver, livereload, launch chrome all at once!](https://youtu.be/C5M2cy80LxE?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
+>>
+>>[Enable Unittest for Django Projects in VSCode](https://youtu.be/7RaPq2BnPCI?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
+>>
+>>[How to turn on logging in your Django App](https://youtu.be/Z7BOBn8B5qA?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
+>>
+>>[My Django logging setup explained in detail](https://youtu.be/m_EkU56KdJg?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
+>>
+>>[How to Debug a Django Application is VS Code](https://youtu.be/spmFjhQIKOo)
+>>
+>>[Logging in Django Apps](https://youtu.be/m_EkU56KdJg)
+>>
 
 ### One Line Command for testing setup
 
@@ -174,3 +204,9 @@ Faster way to get to the project (Ubuntu)
 ## Always refer to the MAIN branch
 
     Newer README.md documentation will only be updated on the main branch, sub-branches will not be pulled.
+
+## Free videos
+
+>
+>[Tutorials and walkthroughs for software developers, programmers, and engineer by Corey Schafer](https://www.youtube.com/@coreyms)
+>
