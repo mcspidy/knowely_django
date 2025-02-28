@@ -6,6 +6,7 @@
         "pipenv",
         "runserver",
         "Schafer",
+        "startapp",
         "startproject",
         "startwm",
         "xrdp"

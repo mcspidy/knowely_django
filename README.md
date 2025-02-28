@@ -137,7 +137,7 @@ but if you're storing the page in [BitBucket](https://bitbucket.org/tutorials/ma
 
 ## Commands used during coding and testing
 
-[This Repository on GitHub](https://github.com/mcspidy/knowely_python_core)
+[This Repository on GitHub](https://github.com/mcspidy/knowely_django)
 
 To utilize this repository, fork a copy to your [GitHub.com](https://GitHub.com) account
 
@@ -238,7 +238,8 @@ python manage.py loaddata <datafile.json>   # if using database
 python manage.py runserver                  # ctrl-c to exit when running in terminal
 
 python manage.py startapp app_name          # To add a new app to the project
-                                            # REMEMBER to add the new app to the INSTALLED_APPS, it's required.
+                                            # REMEMBER to add the new app to the INSTALLED_APPS,
+                                            # It's required.
 ```
 
 #### Django Links
