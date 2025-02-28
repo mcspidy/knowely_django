@@ -236,29 +236,34 @@ python manage.py migrate
 python manage.py makemigrations
 python manage.py loaddata <datafile.json>   # if using database
 python manage.py runserver                  # ctrl-c to exit when running in terminal
+
+python manage.py startapp app_name          # To add a new app to the project
+                                            # REMEMBER to add the new app to the INSTALLED_APPS, it's required.
 ```
 
 #### Django Links
 
->
->[Django Tutorial in VS Code](https://code.visualstudio.com/docs/python/tutorial-django)
->
->[Django Fixtures Tutorial: How to use dumpdata and loaddata](https://learndjango.com/tutorials/django-fixtures-dumpdata-loaddata)
->
-[John Sully videos](https://www.youtube.com/@johnsolly/videos)
->
->>[Ultimate One-click Django Debugging. Runserver, livereload, launch chrome all at once!](https://youtu.be/C5M2cy80LxE?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
->>
->>[Enable Unittest for Django Projects in VSCode](https://youtu.be/7RaPq2BnPCI?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
->>
->>[How to turn on logging in your Django App](https://youtu.be/Z7BOBn8B5qA?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
->>
->>[My Django logging setup explained in detail](https://youtu.be/m_EkU56KdJg?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
->>
->>[How to Debug a Django Application is VS Code](https://youtu.be/spmFjhQIKOo)
->>
->>[Logging in Django Apps](https://youtu.be/m_EkU56KdJg)
->>
+- [Django documentation](https://docs.djangoproject.com/en/5.1/)
+
+- [The Django admin site](https://docs.djangoproject.com/en/5.1/ref/contrib/admin/)
+
+- [Django Tutorial in VS Code](https://code.visualstudio.com/docs/python/tutorial-django)
+
+- [Django Fixtures Tutorial: How to use dumpdata and loaddata](https://learndjango.com/tutorials/django-fixtures-dumpdata-loaddata)
+
+- [John Sully videos](https://www.youtube.com/@johnsolly/videos)
+
+  - [Ultimate One-click Django Debugging. Runserver, livereload, launch chrome all at once!](https://youtu.be/C5M2cy80LxE?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
+
+  - [Enable Unittest for Django Projects in VSCode](https://youtu.be/7RaPq2BnPCI?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
+
+  - [How to turn on logging in your Django App](https://youtu.be/Z7BOBn8B5qA?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
+
+  - [My Django logging setup explained in detail](https://youtu.be/m_EkU56KdJg?list=PL1pc4P-E8TnRehFJPmhQOQCwTdygsxZIx)
+
+  - [How to Debug a Django Application is VS Code](https://youtu.be/spmFjhQIKOo)
+
+  - [Logging in Django Apps](https://youtu.be/m_EkU56KdJg)
 
 ### One Line Command for testing setup
 
